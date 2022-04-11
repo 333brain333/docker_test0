@@ -1,0 +1,14 @@
+version: "3.7"
+services:
+  nmap:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    tty: true
+    environment:
+      - SCAN_NET=192.168.0.0/30
+      - OUTFILE=/opt/scan.xml
+    volumes:
+      - /home/oberon1317/Downloads/nmap-docker/test:/opt/
+
+    restart: unless-stopped

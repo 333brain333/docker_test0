@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Fri Apr  8 17:04:21 2022 as: nmap -v -sP -oX /opt/scan.xml 192.168.0.0/30 -->
+<nmaprun scanner="nmap" args="nmap -v -sP -oX /opt/scan.xml 192.168.0.0/30" start="1649437461" startstr="Fri Apr  8 17:04:21 2022" version="7.80" xmloutputversion="1.04">
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="Ping Scan" time="1649437461"/>
+<taskend task="Ping Scan" time="1649437463" extrainfo="4 total hosts"/>
+<taskbegin task="Parallel DNS resolution of 4 hosts." time="1649437463"/>
+<taskend task="Parallel DNS resolution of 4 hosts." time="1649437463"/>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="192.168.0.0" addrtype="ipv4"/>
+</host>
+<host><status state="up" reason="echo-reply" reason_ttl="127"/>
+<address addr="192.168.0.1" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="225" rttvar="3754" to="100000"/>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="192.168.0.2" addrtype="ipv4"/>
+</host>
+<host><status state="down" reason="no-response" reason_ttl="0"/>
+<address addr="192.168.0.3" addrtype="ipv4"/>
+</host>
+<runstats><finished time="1649437463" timestr="Fri Apr  8 17:04:23 2022" elapsed="1.58" summary="Nmap done at Fri Apr  8 17:04:23 2022; 4 IP addresses (1 host up) scanned in 1.58 seconds" exit="success"/><hosts up="1" down="3" total="4"/>
+</runstats>
+</nmaprun>
